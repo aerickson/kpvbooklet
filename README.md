@@ -15,17 +15,14 @@ LICENSE for more details.
 - gather and install dependencies
   - getting kindle device jars
     - https://github.com/aerickson/kindle-jar-extractor
-    - other methods (via ssh and usbnetwork hack)
+    - via ssh via usbnetwork hack (see above for directories to copy and destination path).
+  - install ant
+    - OS X
+      - `brew install ant`
+    - linux/debian
+      - not tested, but likely `apt install ant`
   - install kindletool
-    - get dependencies
-      - OS X
-        - `brew install gnu-tar libarchive ant`
-      - linux/debian
-        - not tested, but likely `apt install libarchive-dev ant`
-    - install
-      - `git clone https://github.com/NiLuJe/KindleTool`
-      - `cd KindleTool && make`
-      - `cp KindleTool/Release/kindletool <DIR_ON_YOUR_PATH>/`
+    - https://github.com/NiLuJe/KindleTool
 - build and package
   - build the jar
     - `KINDLE_EBOOK=<DIR_WITH_DEVICE_JARS> ant`
