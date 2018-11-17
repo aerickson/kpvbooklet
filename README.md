@@ -9,3 +9,18 @@ User can switch the open type in KUAL KPVBooklet extentions.
 
 KPVBooklet is licensed under the MIT license. See the file
 LICENSE for more details.
+
+## building directions
+
+```
+# install deps - OS X
+brew install gnu-tar libarchive
+# install deps - others
+# TBD
+
+# build JAR
+ant
+
+# package
+./build-updates.sh
+```
