@@ -12,12 +12,22 @@ LICENSE for more details.
 
 ## building directions
 
+1. getting kindle jars dependency
+
+https://wiki.mobileread.com/wiki/Kindlet_Developer_HowTo#What_do_I_need_to_do_to_start_developing_Kindlets.3F
+
+1. get libraries
+
 ```
 # install deps - OS X
-brew install gnu-tar libarchive
-# install deps - others
-# TBD
+brew install gnu-tar libarchive ant
+# install deps - linux/debian
+# TBD... `apt install libarchive-dev`?
+```
 
+1. build and package
+
+```
 # build JAR
 ant
 
