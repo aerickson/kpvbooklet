@@ -10,28 +10,19 @@ User can switch the open type in KUAL KPVBooklet extentions.
 KPVBooklet is licensed under the MIT license. See the file
 LICENSE for more details.
 
-## building directions
+## building
 
-1. getting kindle device jars
-
-use https://github.com/aerickson/kindle-jar-extractor. copy the output somewhere on your computer.
-
-1. get other dependencies
-
-```
-# install deps - OS X
-brew install gnu-tar libarchive ant
-# install deps - linux/debian
-# TBD... `apt install libarchive-dev`?
-```
-
-1. build and package
-
-```
-# build JAR
-export KINDLE_EBOOK=<JAR_EXTRACTOR_DIR>
-ant
-
-# package
-./build-updates.sh
-```
+- gather and install dependencies
+  - getting kindle device jars
+    - https://github.com/aerickson/kindle-jar-extractor
+    - other methods (via ssh/usbnetwork?)
+  - get other dependencies
+    - OS X
+      - `brew install gnu-tar libarchive ant`
+    - linux/debian
+      - not tested, but likely `apt install libarchive-dev ant`
+- build and package
+  - build the jar
+    - `KINDLE_EBOOK=<DIR_WITH_DEVICE_JARS> ant`
+  - package
+    - `./build-updates.sh`
