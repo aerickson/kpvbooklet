@@ -12,14 +12,11 @@ LICENSE for more details.
 
 ## building directions
 
-1. getting kindle jars dependency
+1. getting kindle device jars
 
-https://wiki.mobileread.com/wiki/Kindlet_Developer_HowTo#What_do_I_need_to_do_to_start_developing_Kindlets.3F
+use https://github.com/aerickson/kindle-jar-extractor. copy the output somewhere on your computer.
 
-- ssh via usbnetwork: google
-- kindle library extractor: https://github.com/aerickson/kindle-jar-extractor
-
-1. get libraries
+1. get other dependencies
 
 ```
 # install deps - OS X
@@ -32,6 +29,7 @@ brew install gnu-tar libarchive ant
 
 ```
 # build JAR
+export KINDLE_EBOOK=<JAR_EXTRACTOR_DIR>
 ant
 
 # package
